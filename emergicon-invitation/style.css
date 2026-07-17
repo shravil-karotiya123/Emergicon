@@ -362,21 +362,11 @@ main {
 
 .label-dept {
     font-size: 1.35rem;
-<<<<<<< HEAD
-    font-weight: 600;
-    /* Changed from 300 to 600 (or use 700 for maximum boldness) */
-=======
     font-weight: 300;
->>>>>>> 47478b483d2a075843e754d78559b3f85bac3c4f
     letter-spacing: 5px;
     color: var(--text-secondary);
     text-transform: uppercase;
     margin-top: 0.5rem;
-<<<<<<< HEAD
-    /* Added transition to ensure the hover glow animates smoothly */
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-=======
->>>>>>> 47478b483d2a075843e754d78559b3f85bac3c4f
 }
 
 .label-year {
@@ -1101,148 +1091,7 @@ main {
 }
 
 /* Retaining smooth transitions but preventing layout jumps */
-<<<<<<< HEAD
-/* Retaining smooth transitions but preventing layout jumps */
 .leadership-card,
 .highlight-card {
     will-change: transform, border-color, box-shadow;
-}
-
-/* ==========================================================================
-   FEATURE STYLES (HEADER, LOGO WARNING, EASTER EGG)
-   ========================================================================== */
-
-/* Feature 3: Header Text Above Logo */
-.hero-header-text {
-    font-family: var(--font-tech);
-    font-size: 1.1rem;
-    letter-spacing: 5px;
-    color: #ffffff;
-    text-shadow: 0 0 10px rgba(79, 195, 247, 0.6);
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-/* Feature 1 & 2: Logo Text Update & Hover Effect */
-.logo-warning-text {
-    font-family: var(--font-tech);
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.6);
-    margin-top: 1rem;
-    text-align: center;
-    line-height: 1.4;
-    transition: all 0.3s ease;
-    cursor: none;
-    /* Inherit global custom cursor */
-    z-index: 10;
-    position: relative;
-    pointer-events: auto;
-    /* Ensure hover works */
-}
-
-.logo-warning-text:hover {
-    color: #FF3B30;
-    transform: scale(1.08);
-    text-shadow: 0 0 15px rgba(255, 59, 48, 0.8), 0 0 30px rgba(255, 59, 48, 0.6);
-    animation: glitchShake 0.4s cubic-bezier(.36, .07, .19, .97) both;
-}
-
-@keyframes glitchShake {
-    0% {
-        transform: translate(0) scale(1.08);
-    }
-
-    20% {
-        transform: translate(-2px, 2px) scale(1.08);
-    }
-
-    40% {
-        transform: translate(-2px, -2px) scale(1.08);
-    }
-
-    60% {
-        transform: translate(2px, 2px) scale(1.08);
-    }
-
-    80% {
-        transform: translate(2px, -2px) scale(1.08);
-    }
-
-    100% {
-        transform: translate(0) scale(1.08);
-    }
-}
-
-/* Feature 4: Floating Among Us Characters */
-.floating-crewmates-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    z-index: 1;
-    /* Behind main content */
-    overflow: hidden;
-}
-
-.crewmate {
-    position: absolute;
-    opacity: 0.2;
-    animation: drift linear infinite;
-    will-change: transform;
-}
-
-/* Stagger start positions, directions, and speeds */
-.crewmate-1 {
-    left: -10%;
-    top: 20%;
-    animation: drift-right 45s linear infinite;
-}
-
-.crewmate-2 {
-    left: -10%;
-    top: 60%;
-    animation: drift-right 55s linear infinite;
-    animation-delay: -15s;
-}
-
-.crewmate-3 {
-    right: -10%;
-    top: 30%;
-    animation: drift-left 65s linear infinite;
-    animation-delay: -30s;
-}
-
-.crewmate-4 {
-    right: -10%;
-    top: 80%;
-    animation: drift-left 40s linear infinite;
-    animation-delay: -20s;
-}
-
-@keyframes drift-right {
-    0% {
-        transform: translate(-10vw, 0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate(120vw, 30vh) rotate(360deg);
-    }
-}
-
-@keyframes drift-left {
-    0% {
-        transform: translate(10vw, 0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate(-120vw, -30vh) rotate(-360deg);
-    }
-=======
-.leadership-card,
-.highlight-card {
-    will-change: transform, border-color, box-shadow;
->>>>>>> 47478b483d2a075843e754d78559b3f85bac3c4f
 }
